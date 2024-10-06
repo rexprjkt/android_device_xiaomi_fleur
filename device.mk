@@ -103,6 +103,8 @@ PRODUCT_PACKAGES += \
     libexif.vendor:64 \
     libpng.vendor:64
 
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
+
 # ConsumerIR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
