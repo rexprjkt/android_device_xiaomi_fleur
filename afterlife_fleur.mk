@@ -12,9 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/fleur/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+AFTERLIFE_MAINTAINER := ido@rexprjkt°
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_AOSP_RECOVERY := true
+TARGET_SUPPORTS_BLUR := true
 
-PRODUCT_NAME := lineage_fleur
+PRODUCT_NAME := afterlife_fleur
 PRODUCT_DEVICE := fleur
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
