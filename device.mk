@@ -432,7 +432,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi \
     hardware/google/pixel \
     hardware/google/interfaces \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/halcyon/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client
 
 # Tensor Flow Lite

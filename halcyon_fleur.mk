@@ -11,10 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/fleur/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Halcyon Project stuff.
+$(call inherit-product, vendor/halcyon/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_fleur
+PRODUCT_NAME := halcyon_fleur
 PRODUCT_DEVICE := fleur
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
